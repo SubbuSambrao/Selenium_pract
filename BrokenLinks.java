@@ -24,7 +24,6 @@ public class BrokenLinks {
 	@BeforeMethod
 	public void setUp() {
 		d=new ChromeDriver();
-		d.manage().window().maximize();
 		d.manage().timeouts().implicitlyWait(Duration.ofMillis(60));
 		d.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
 	}
